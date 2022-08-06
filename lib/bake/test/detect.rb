@@ -21,7 +21,7 @@
 module Bake
 	module Test
 		def self.detect(root)
-			if exist?(root, "rspec")
+			if exist?(root, "spec")
 				return :rspec
 			elsif exist?(root, "config/sus.rb")
 				return :sus
