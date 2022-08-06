@@ -10,7 +10,7 @@ end
 # @parameter root [String] the root directory of the project to run tests for.
 def test(root: context.root)
 	if method = ::Bake::Test.detect(root)
-		::Bake::Test::Runner.public_send(method, root)
+		::Bake::Test::Runner.public_send(method, root) or abort
 	else
 		raise "No test runner found!"
 	end
