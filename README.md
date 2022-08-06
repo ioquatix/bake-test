@@ -2,7 +2,7 @@
 
 A gem for executing internal tests.
 
-[![Development Status](https://github.com/ioquatix/bake-test/workflows/Development/badge.svg)](https://github.com/ioquatix/bake-test/actions?workflow=Development)
+[![Development Status](https://github.com/ioquatix/bake-test/workflows/Test/badge.svg)](https://github.com/ioquatix/bake-test/actions?workflow=Test)
 
 ## Usage
 
