@@ -39,4 +39,3 @@ with "rake style project" do
 		expect(Bake::Test.detect(root)).to be == :rake
 	end
 end
-
