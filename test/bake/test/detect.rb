@@ -24,14 +24,6 @@ with "sus style project" do
 	end
 end
 
-with "minitest style project" do
-	let(:root) {File.expand_path('.fixtures/minitest', __dir__)}
-
-	it "can detect the test runner" do
-		expect(Bake::Test.detect(root)).to be == :minitest
-	end
-end
-
 with "rake style project" do
 	let(:root) {File.expand_path('.fixtures/rake', __dir__)}
 

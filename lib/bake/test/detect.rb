@@ -26,7 +26,7 @@ module Bake
 			elsif exist?(root, "config/sus.rb")
 				return :sus
 			elsif exist?(root, "test")
-				return :minitest
+				return :sus
 			elsif exist?(root, "Rakefile") || exist?(root, "rakefile")
 				return :rake
 			end
