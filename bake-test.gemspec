@@ -6,7 +6,7 @@ Gem::Specification.new do |spec|
 	spec.name = "bake-test"
 	spec.version = Bake::Test::VERSION
 	
-	spec.summary = "Run local test suites without knowing exactly hwo to run them."
+	spec.summary = "Run local test suites without knowing exactly how to run them."
 	spec.authors = ["Samuel Williams"]
 	spec.license = "MIT"
 	
