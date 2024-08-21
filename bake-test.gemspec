@@ -7,7 +7,7 @@ Gem::Specification.new do |spec|
 	spec.version = Bake::Test::VERSION
 	
 	spec.summary = "Run local test suites without knowing exactly how to run them."
-	spec.authors = ["Samuel Williams"]
+	spec.authors = ["Samuel Williams", "Felix Yan"]
 	spec.license = "MIT"
 	
 	spec.cert_chain  = ['release.cert']
@@ -17,11 +17,12 @@ Gem::Specification.new do |spec|
 	
 	spec.metadata = {
 		"funding_uri" => "https://github.com/sponsors/ioquatix/",
+		"source_code_uri" => "https://github.com/ioquatix/bake-test.git",
 	}
 	
-	spec.files = Dir.glob('{bake,lib}/**/*', File::FNM_DOTMATCH, base: __dir__)
+	spec.files = Dir.glob(['{bake,lib}/**/*', '*.md'], File::FNM_DOTMATCH, base: __dir__)
+	
+	spec.required_ruby_version = ">= 3.1"
 	
 	spec.add_dependency "bake"
-	
-	spec.add_development_dependency "sus"
 end
